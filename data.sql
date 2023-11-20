@@ -1,0 +1,1 @@
+INSERT INTO animals(name, date_of_birth, weight_kg, neutered, escape_attempts) VALUES ('Agumon', '2020-02-03', 0, FALSE, 10.23);
