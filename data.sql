@@ -11,3 +11,5 @@ INSERT INTO animals(name, date_of_birth, weight_kg, neutered, escape_attempts) V
 INSERT INTO animals(name, date_of_birth, weight_kg, neutered, escape_attempts) VALUES ('Ditto', '2022-05-14', 22, TRUE, 4);
 insert into owners(full_name, age) values ('Sam Smith', 34), ('Jennifer Orwell', 19), ('Bob', 45), ('Melody Pond', 77), ('Dean Winchester', 14), ('Jodie Whittaker', 38);
 insert into species(name) values ('Pokemon'), ('Digimon');
+update animals set species_id = 2 where name like '%mon';
+update animals set species_id = 1 where species_id is null;
