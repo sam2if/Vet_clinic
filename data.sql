@@ -13,3 +13,10 @@ insert into owners(full_name, age) values ('Sam Smith', 34), ('Jennifer Orwell',
 insert into species(name) values ('Pokemon'), ('Digimon');
 update animals set species_id = 2 where name like '%mon';
 update animals set species_id = 1 where species_id is null;
+update animals set owner_id = 1 where name = 'Agumon';
+update animals set owner_id = 2 where name = 'Gabumon';
+update animals set owner_id = 2 where name = 'Pikachu';
+update animals set owner_id = 3 where name = 'Devimon';
+update animals set owner_id = 3 where name = 'Plantnom';
+update animals set owner_id = 4 where name in ('Charmander', 'Squirtle', 'Blossom');
+update animals set owner_id = 5 where name in ('Angemon', 'Boarmon');
