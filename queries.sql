@@ -37,3 +37,8 @@ SELECT species, MIN(weight_kg), MAX(weight_kg) FROM animals GROUP BY species;
 SELECT date_of_birth, AVG(escape_attempts) FROM animals GROUP BY date_of_birth HAVING date_of_birth BETWEEN '1990-01-01' AND '2000-12-31';
 select name, owner_id, owners.id from animals join owners on owners.id = owner_id where owners.id = 4;
 select animals.name, species_id, species.id from animals join species on species_id = species.id where species.id = 1;
+select name, full_name, owner_id, owners.id from animals right join owners on owner_id = owners.id;
+select count(animals.name), species_id, species.id from animals join species on species_id = species.id group by animals.species_id, species.id;
+select animals.name, species_id, full_name, owner_id, species.id from animals join species on species.id = species_id join owners on owner_id = species_id where owners.id = 2;
+select name, owner_id, owners.id, escape_attempts from animals join owners on owner_id = owners.id where (owners.id = 5 and escape_attempts = 0);
+SELECT owners.full_name, COUNT(animals.id) AS num_animals FROM owners JOIN animals ON owners.id = animals.owner_id GROUP BY owners.id, owners.full_name ORDER BY num_animals DESC LIMIT 1;
