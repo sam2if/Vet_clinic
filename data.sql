@@ -21,3 +21,4 @@ update animals set owner_id = 3 where name = 'Plantnom';
 update animals set owner_id = 4 where name in ('Charmander', 'Squirtle', 'Blossom');
 update animals set owner_id = 5 where name in ('Angemon', 'Boarmon');
 insert into vets(name, age, date_of_graduation) values ('William Tatcher', 45, '2000-04-23'), ('Maisy Smith', 26, '2019-01-17'), ('Stephanie Mendez', 64, '1981-05-04'), ('Jack Harkness', 38, '2008-06-08');
+insert into specialization (vets_id, species_id) values (1, 1), (3, 1), (3, 2), (4, 2);
