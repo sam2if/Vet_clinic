@@ -42,3 +42,5 @@ select count(animals.name), species_id, species.id from animals join species on 
 select animals.name, species_id, full_name, owner_id, species.id from animals join species on species.id = species_id join owners on owner_id = species_id where owners.id = 2;
 select name, owner_id, owners.id, escape_attempts from animals join owners on owner_id = owners.id where (owners.id = 5 and escape_attempts = 0);
 SELECT owners.full_name, COUNT(animals.id) AS num_animals FROM owners JOIN animals ON owners.id = animals.owner_id GROUP BY owners.id, owners.full_name ORDER BY num_animals DESC LIMIT 1;
+select name from animals join visits on animals_id = animals.id where vets_id = 1 order by date_of_visits desc limit 1;
+ select animals.name, vets.name from animals join visits on animals.id = animals_id join vets on vets_id = vets.id where vets.id = 3;
