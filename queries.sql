@@ -48,4 +48,7 @@ select vets.name, species.name from vets left join specialization on vets.id = v
 select name from animals join visits on animals.id = animals_id where vets_id = 3 and date_of_visits between '2020-04-01' and '2020-08-30';
 select animals.name, count(animals.name) from animals join visits on animals.id = animals_id group by animals_id, animals.name order by count desc limit 1;
 select animals.name, date_of_visits from animals join visits on animals.id = animals_id group by vets_id, animals.name, date_of_visits having vets_id = 2 order by date_of_visits asc limit 1;
+select animals.name animals_name, vets.name vets_name, date_of_visits from animals join visits on animals_id = animals.id join vets on vets_id = vets.id order by date_of_visits desc;
+select vets.name, count(vets.name) from vets join visits on vets.id = vets_id group by vets_id, vets.name having vets_id = 2;
+select species.name, count(vets_id), vets_id from animals join species on species_id = species.id join visits on animals.id = animals_id group by vets_id, species.name having vets_id = 2;
 
