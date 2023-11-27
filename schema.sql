@@ -32,3 +32,6 @@ EXPLAIN ANALYZE SELECT * FROM visits where vet_id = 2;
 CREATE INDEX idx_vet_id ON visits(vet_id);
 
 
+EXPLAIN ANALYZE SELECT * FROM owners where email = 'owner_18327@mail.com';
+-- Adding an index to improve the execution time.
+CREATE INDEX idx_email ON owners(email);
