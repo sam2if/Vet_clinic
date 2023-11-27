@@ -28,4 +28,7 @@ CREATE INDEX idx_animal_id ON visits(animal_id);
 
 explain analyze SELECT COUNT(*) FROM visits where animal_id = 4; 
 
+EXPLAIN ANALYZE SELECT * FROM visits where vet_id = 2;
+CREATE INDEX idx_vet_id ON visits(vet_id);
+
 
