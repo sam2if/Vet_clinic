@@ -24,4 +24,8 @@ insert into owners (full_name, age, email) select 'Owner ' || generate_series(1,
 
 explain analyze SELECT COUNT(*) FROM visits where animal_id = 4;  
 
+CREATE INDEX idx_animal_id ON visits(animal_id);
+
+explain analyze SELECT COUNT(*) FROM visits where animal_id = 4; 
+
 
