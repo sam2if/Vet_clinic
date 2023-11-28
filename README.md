@@ -128,6 +128,18 @@ To run tests, run the following command:
 - Twitter: [samuel_lemma](https://twitter.com/samuellemma3733)
 - LinkedIn: [samuel_lemma](https://www.linkedin.com/in/s-lemma/)
 
+👤 **Karan Joshi**
+
+- GitHub: [@githubhandle](https://github.com/DevKaranJ)
+- Twitter: [@twitterhandle](https://twitter.com/DevKaranJ)
+- Linkdin: [@linkdinhandle](https://twitter.com/Dev_Karan_J)
+
+👤 **Hamid**
+
+- GitHub: [@hamidazim321](https://github.com/hamidazim321)
+- Twitter: [@hamidazim321](https://twitter.com/hamidazim321)
+- LinkedIn: [hamid-azim](https://www.linkedin.com/in/hamid-azim)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
